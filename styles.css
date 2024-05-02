@@ -263,6 +263,11 @@ nav label{
     background-size: cover;
     background-position: center;
   }
+
+  #organisateurs h2{
+    color: #195c6c;
+    margin-bottom: 15px;
+  }
   
   .liste-organisateurs {
     display: flex;
@@ -291,20 +296,20 @@ nav label{
   .organisateur h3 {
     font-size: 20px;
     margin-bottom: 5px;
-    color: #333;
+    color: #195c6c;
   }
   
   .organisateur p {
     font-size: 16px;
     line-height: 1.5;
-    color: #666;
+    color: #195c6c;
   }
   
   .organisateur a {
     display: inline-block;
     margin-top: 10px;
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #195c6c;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -312,7 +317,8 @@ nav label{
   }
   
   .organisateur a:hover {
-    background-color: #0056b3;
+    background-color: #de8d3c;
+    color: #fff;
   }
   
   .organisateur .reseaux-sociaux {
@@ -324,12 +330,12 @@ nav label{
     display: inline-block;
     margin-right: 10px;
     font-size: 20px;
-    color: #999;
+    color: #fff;
     transition: color 0.3s ease;
   }
   
   .organisateur .reseaux-sociaux a:hover {
-    color: #333;
+    color: #eee;
   }
 
 
@@ -940,12 +946,14 @@ hr{
 
       /*Responsive pour la partie organisateur*/
       .liste-organisateurs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column; 
       }
     
       .organisateur {
-        width: 100%; 
-        margin-bottom: 20px;
+        width: 80%; 
       }
       
 }
