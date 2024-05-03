@@ -255,6 +255,57 @@ nav label{
     color: #fff;
 }
 
+/*Style de la partie vision*/
+.heading p{
+    font-size: 18px;
+    color: #195c6c;
+    margin-bottom: 35px;
+}
+
+.vision{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.vision-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.vision-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: .5s ease;
+}
+
+.vision-image:hover img{
+    transform: scale(1.2)
+}
+
+.vision-content{
+    flex: 1;
+}
+
+.vision-content h3{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #195c6c;
+}
+
+.vision-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #195c6c;
+}
+
 /*Styles Organisateur*/
 #organisateurs {
     text-align: center;
@@ -290,7 +341,6 @@ nav label{
     width: 100%;
     height: auto;
     margin-bottom: 10px;
-    border-radius: 50%;
   }
   
   .organisateur h3 {
@@ -956,6 +1006,25 @@ hr{
         width: 80%; 
       }
       
+      /*Responsive de la partie vision*/
+      .vision {
+        flex-direction: column;
+    }
+    
+    .vision-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .vision-content h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .vision-content p {
+        font-size: 16px;
+    }
+
 }
 
 
